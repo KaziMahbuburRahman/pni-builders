@@ -1,8 +1,9 @@
 import { blog_data } from '@/Assets/assets'
 import Image from 'next/image'
-import React from 'react'
+
 
 export default function Blogcard({image, title, description, category}) {
+    
     return (
         // <div className='flex justify-center items-center min-h-screen bg-yellow-400 font-FigTree text-base'>
             <div className='flex flex-col justify-center bg-white p-5 rounded-xl border-2 border-black h-full max-lg:w-[375px] lg:w-[384px] shadow-[10px_10px_0px_1px_rgba(0,0,0,1)]'>
