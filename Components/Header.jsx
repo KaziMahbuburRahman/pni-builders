@@ -7,7 +7,7 @@ export const Header = () => {
     return (
         <div>
             <Navbar />
-            <Newsletter />
+            
             
         </div>
     )
