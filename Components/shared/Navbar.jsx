@@ -14,7 +14,7 @@ export default function Navbar() {
         <div className="relative mx-auto max-w-full px-6 lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem]">
           <nav
             aria-label="main navigation"
-            className="flex h-[5.5rem] items-stretch justify-between font-medium text-slate-700"
+            className="flex lg:h-[5.5rem] h-[4.5rem] items-stretch justify-between font-medium text-slate-700"
             role="navigation"
           >
             {/*      <!-- Brand logo --> */}
@@ -25,7 +25,7 @@ export default function Navbar() {
               className="flex items-center gap-2 whitespace-nowrap py-3 text-lg focus:outline-none lg:flex-1"
               href="javascript:void(0)"
             > */}
-              {/* <svg
+            {/* <svg
                 width="300"
                 height="300"
                 viewBox="0 0 300 300"
@@ -46,9 +46,9 @@ export default function Navbar() {
                   fill="rgba(255,255,255,.2)"
                 />
               </svg> */}
-              <Link href={"/"}>
-                <Image src={assets.pini_builder} width={300} height={300} />
-              </Link>
+            <Link className="flex items-center gap-2 whitespace-nowrap py-3 text-lg focus:outline-none lg:flex-1" href={"/"}>
+              <Image src={assets.pini_builder} width={300} height={300} />
+            </Link>
             {/* </a> */}
             {/*      <!-- Mobile trigger --> */}
             <button
