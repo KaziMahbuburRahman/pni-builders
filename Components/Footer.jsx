@@ -4,11 +4,12 @@ import { usePathname } from "next/navigation"
 import React from "react"
 
 export default function Footer() {
-  const path = usePathname()
+  const pathname = usePathname()
+  const isAdminRoute = pathname.startsWith('/admin')
   return (
     <>
       {/*<!-- Component: Primary Dark Theme Footer --> */}
-      {!willNotRender.includes(path) && (
+      {!isAdminRoute && (
         <footer className="w-full text-emerald-200">
           {/*    <!-- Main footer --> */}
           <div className="pt-16 pb-12 text-sm border-t border-emerald-600 bg-emerald-500">
