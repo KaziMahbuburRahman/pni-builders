@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link"
 import React, { useState } from "react"
 
 export default function Sidebar() {
@@ -79,8 +80,8 @@ export default function Sidebar() {
                     <div>
                         <ul className="flex flex-1 flex-col gap-1 py-3">
                             <li className="px-3">
-                                <a
-                                    href="#"
+                                <Link
+                                    href="/admin"
                                     className="flex items-center gap-3 rounded p-3 text-slate-700 transition-colors hover:bg-emerald-50 hover:text-emerald-500 focus:bg-emerald-50 aria-[current=page]:bg-emerald-50 aria-[current=page]:text-emerald-500 "
                                 >
                                     <div className="flex items-center self-center">
@@ -104,11 +105,11 @@ export default function Sidebar() {
                                     <div className="flex w-full flex-1 flex-col items-start justify-center gap-0 overflow-hidden truncate text-sm">
                                         Dashboard
                                     </div>
-                                </a>
+                                </Link>
                             </li>
                             <li className="px-3">
-                                <a
-                                    href="#"
+                                <Link
+                                    href="/admin/addProduct"
                                     className="flex items-center gap-3 rounded p-3 text-slate-700 transition-colors hover:bg-emerald-50 hover:text-emerald-500 focus:bg-emerald-50 aria-[current=page]:bg-emerald-50 aria-[current=page]:text-emerald-500 "
                                 >
                                     <div className="flex items-center self-center ">
@@ -130,12 +131,12 @@ export default function Sidebar() {
                                         </svg>
                                     </div>
                                     <div className="flex w-full flex-1 flex-col items-start justify-center gap-0 overflow-hidden truncate text-sm">
-                                        Messages
+                                        Create New Post
                                     </div>
                                     <span className="inline-flex items-center justify-center rounded-full bg-pink-100 px-2 text-xs text-pink-500 ">
                                         2<span className="sr-only"> new notifications</span>
                                     </span>
-                                </a>
+                                </Link>
                             </li>
                             <li className="px-3">
                                 <a
@@ -166,8 +167,8 @@ export default function Sidebar() {
                                 </a>
                             </li>
                             <li className="px-3">
-                                <a
-                                    href="#"
+                                <Link
+                                    href="/admin/blogList"
                                     className="flex items-center gap-3 rounded p-3 text-slate-700 transition-colors hover:bg-emerald-50 hover:text-emerald-500 focus:bg-emerald-50 aria-[current=page]:bg-emerald-50 aria-[current=page]:text-emerald-500 "
                                 >
                                     <div className="flex items-center self-center ">
@@ -189,12 +190,12 @@ export default function Sidebar() {
                                         </svg>
                                     </div>
                                     <div className="flex w-full flex-1 flex-col items-start justify-center gap-0 overflow-hidden truncate text-sm">
-                                        Tasks
+                                        Posts
                                     </div>
                                     <span className="inline-flex items-center justify-center rounded-full bg-pink-100 px-2 text-xs text-pink-500 ">
                                         7<span className="sr-only"> new notifications</span>
                                     </span>
-                                </a>
+                                </Link>
                             </li>
                             <li className="px-3">
                                 <a
