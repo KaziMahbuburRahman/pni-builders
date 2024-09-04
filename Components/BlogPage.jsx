@@ -34,7 +34,7 @@ export default function BlogPage({ data }) {
                 <div className="w-[90%] mx-auto flex md:gap-4 xs:gap-2 justify-center items-center pt-4">
                     <div className="flex gap-2 items-center">
                         <Image
-                            src={blog_data[0].author_img}
+                            src={data.authorImg}
                             alt="Blogger Profile"
                             className="md:w-[2.2rem] md:h-[2.2rem] xs:w-[2rem] xs:h-[2rem] rounded-full"
                             width={35}
