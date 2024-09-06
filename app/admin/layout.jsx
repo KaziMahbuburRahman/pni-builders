@@ -9,6 +9,7 @@ export default function Layout({ children }) {
             <div>
                 <ToastContainer theme='dark' />
                 <Sidebar />
+                <div className='lg:mb-0 mb-14'></div>
             </div>
             {children}
         </>
