@@ -63,14 +63,14 @@ export default function page() {
   }
 
   return (
-    <form onSubmit={onSubmitHandler} className="container editor mx-auto w-10/12 flex flex-col text-gray-800 border border-gray-300 p-4 shadow-lg max-w-2xl">
+    <form onSubmit={onSubmitHandler} className="container editor mx-auto  flex flex-col text-gray-800 border border-gray-300 p-4 shadow-lg max-w-2xl">
       {/* <Dropfile /> */}
       <div className="heading text-center font-bold text-2xl m-5 text-gray-800">
         New Post
       </div>
       {/*<!-- Component: Dropzone file input --> */}
       <div
-        className="relative my-6 container editor mx-auto w-10/12 flex flex-col text-gray-800 border border-gray-300 p-4 shadow-lg">
+        className="relative my-6 container editor mx-auto  flex flex-col text-gray-800 border border-gray-300 p-4 shadow-lg">
         <input
           onChange={(e) => setImage(e.target.files[0])}
           // onClick={console.log("Hello world")}
@@ -117,7 +117,7 @@ export default function page() {
           body {background:white !important;}
         `}
         </style>
-        <div className="editor mx-auto w-10/12 flex flex-col text-gray-800 border border-gray-300 p-4 shadow-lg max-w-2xl">
+        <div className="editor mx-auto  flex flex-col text-gray-800 border border-gray-300 p-4 shadow-lg max-w-2xl">
           <input
             onChange={onChangeHandler}
             value={data.title}
@@ -224,7 +224,7 @@ export default function page() {
         </div>
       </div>
 
-      {/* <button type="submit" className="mt-6 container editor mx-auto w-10/12 flex-col  border-gray-300 p-4 shadow-lg max-w-2xl inline-flex items-center justify-center h-12 gap-2 px-6 text-sm font-medium tracking-wide text-white transition duration-300 rounded whitespace-nowrap bg-emerald-500 hover:bg-emerald-600 focus:bg-emerald-700 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none">
+      {/* <button type="submit" className="mt-6 container editor mx-auto  flex-col  border-gray-300 p-4 shadow-lg max-w-2xl inline-flex items-center justify-center h-12 gap-2 px-6 text-sm font-medium tracking-wide text-white transition duration-300 rounded whitespace-nowrap bg-emerald-500 hover:bg-emerald-600 focus:bg-emerald-700 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none">
         <span>Create Post</span>
       </button> */}
     </form>
