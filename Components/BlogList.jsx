@@ -27,7 +27,7 @@ export default function BlogList() {
                 <button onClick={() => setMenu("Lifestyle")} className={menu === "Lifestyle" ? "bg-black text-white py-1 px-4 rounded-sm" : ""}>Lifestyle</button>
             </div>
             {/* flex flex-wrap justify-around gap-1 gap-y-10 mb-16 xl:mx-24 */}
-            <div className='px-10 py-5 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:gap-10'>
+            <div className='pl-5 lg:px-10 py-5 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:gap-10'>
                 {
                     blogs.filter((item) => menu === "All" ? true : item.category === menu).map((item, index) => <Blogcard image={item.image}
                         title={item.title}
