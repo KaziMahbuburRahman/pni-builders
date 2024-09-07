@@ -26,13 +26,13 @@ export default function BlogList() {
     return (
       <div>
         {/* Tabs Navigation */}
-        <div className="border bg-white/10 dark:bg-black/40 backdrop-blur-sm rounded-md p-4 relative my-10">
+        <div className="border bg-white/10 dark:bg-black/40 backdrop-blur-sm rounded-md p-4 px-8 relative my-10">
           <TabsProvider defaultValue={menu}>
             <div className="flex justify-center mt-2">
               <div className="flex items-center w-fit dark:bg-[#1d2025] bg-gray-200 p-1 dark:text-white text-black rounded-md border relative">
                 {categories.map((category) => (
                   <TabsBtn key={category} value={category}>
-                    <button
+                    <div
                       onMouseEnter={() => setMenu(category)}
                       className={`relative z-10 px-4 py-1 transition-colors duration-300 ${
                         menu === category
@@ -41,7 +41,7 @@ export default function BlogList() {
                       }`}
                     >
                       {category}
-                    </button>
+                    </div>
                   </TabsBtn>
                 ))}
               </div>
