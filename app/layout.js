@@ -1,7 +1,8 @@
 import { Outfit } from "next/font/google";
 import "./globals.css";
-import Footer from "@/Components/Footer";
+
 import { Header } from "@/Components/Header";
+import Footer from "@/Components/HomeComponents/Footer";
 const outfit = Outfit({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
 export const metadata = {
