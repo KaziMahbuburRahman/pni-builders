@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image"
 import Link from "next/link"
 import React, { useState } from "react"
 
@@ -51,7 +52,7 @@ export default function Sidebar() {
                             href="#"
                             className="relative flex h-12 w-12 items-center justify-center rounded-full text-white"
                         >
-                            <img
+                            <Image
                                 src="https://i.pravatar.cc/40?img=7"
                                 alt="user name"
                                 title="user name"

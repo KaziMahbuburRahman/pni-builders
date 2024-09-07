@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import { useTabs } from './TabsProvider';
 import { motion } from 'framer-motion';

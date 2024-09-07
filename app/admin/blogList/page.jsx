@@ -55,7 +55,7 @@ function Index() {
            }
             {/* <tr className="hover:bg-gray-50 border-b transition duration-300">
                 <td className="py-4 px-4 flex justify-start">
-                    <img src="https://source.unsplash.com/64x64/?phone" alt="table navigate ui" className="h-16 w-16 object-cover bg-gray-300" />
+                    <Image src="https://source.unsplash.com/64x64/?phone" alt="table navigate ui" className="h-16 w-16 object-cover bg-gray-300" />
                 </td>
                 <td className="py-4 px-6 border-b text-xl font-medium">Samsung s22</td>
                 <td className="py-4 px-6 border-b text-lg font-medium">$599.99</td>
