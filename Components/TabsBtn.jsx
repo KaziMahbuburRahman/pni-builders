@@ -2,14 +2,20 @@ import React from 'react';
 import { useTabs } from './TabsProvider';
 import { motion } from 'framer-motion';
 
-export const TabsBtn = ({ value, children }) => {
+export const TabsBtn = ({ value, children, setMenu }) => {
   const { activeTab, setActiveTab } = useTabs();
   
   const isActive = activeTab === value;
 
   return (
     <div
-      onMouseEnter={() => setActiveTab(value)} // Hover functionality
+      onMouseEnter={
+        () => {
+          setActiveTab(value)
+          setMenu(value)
+        }
+
+      } // Hover functionality
       className="relative inline-block"
     >
       {isActive && (
