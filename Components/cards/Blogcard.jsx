@@ -7,7 +7,7 @@ export default function Blogcard({ image, title, description, category, id,  asp
 
     return (
         // <div className='flex justify-center items-center min-h-screen bg-yellow-400 font-FigTree text-base'>
-        <div className='h-full max-lg:w-[375px] lg:w-[384px] flex flex-col justify-center  bg-white p-5 rounded-xl border-2 border-black  shadow-[10px_10px_0px_1px_rgba(0,0,0,1)]'>
+        <div className='h-full max-w-[90%]max-lg:w-[375px] lg:w-[384px] flex flex-col justify-center  bg-white p-5 rounded-xl border-2 border-black  shadow-[10px_10px_0px_1px_rgba(0,0,0,1)]'>
             <Link href={`blogs/${id}`}>
                 <Image src={image} 
                 width={400} height={200}
