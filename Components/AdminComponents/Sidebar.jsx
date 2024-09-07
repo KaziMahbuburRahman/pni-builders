@@ -138,7 +138,7 @@ export default function Sidebar() {
                                     </span>
                                 </Link>
                             </li>
-                            <li className="px-3">
+                            {/* <li className="px-3">
                                 <a
                                     href="#"
                                     className="flex items-center gap-3 rounded p-3 text-slate-700 transition-colors hover:bg-emerald-50 hover:text-emerald-500 focus:bg-emerald-50 aria-[current=page]:bg-emerald-50 aria-[current=page]:text-emerald-500 "
@@ -165,7 +165,7 @@ export default function Sidebar() {
                                         Team members
                                     </div>
                                 </a>
-                            </li>
+                            </li> */}
                             <li className="px-3">
                                 <Link
                                     href="/admin/blogList"

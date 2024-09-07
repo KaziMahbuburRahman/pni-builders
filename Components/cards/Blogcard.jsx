@@ -3,14 +3,18 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 
-export default function Blogcard({ image, title, description, category, id }) {
+export default function Blogcard({ image, title, description, category, id,  aspectRatio = '16:9' }) {
 
     return (
         // <div className='flex justify-center items-center min-h-screen bg-yellow-400 font-FigTree text-base'>
-        <div className='flex flex-col justify-center bg-white p-5 rounded-xl border-2 border-black h-full max-lg:w-[375px] lg:w-[384px] shadow-[10px_10px_0px_1px_rgba(0,0,0,1)]'>
+        <div className='h-full max-lg:w-[375px] lg:w-[384px] flex flex-col justify-center  bg-white p-5 rounded-xl border-2 border-black  shadow-[10px_10px_0px_1px_rgba(0,0,0,1)]'>
             <Link href={`blogs/${id}`}>
-                <Image src={image} width={400} height={400} alt='illustration'
-                    className='rounded-tl-xl rounded-tr-xl  ' />
+                <Image src={image} 
+                width={400} height={200}
+
+                alt='illustration'
+                
+                    className='rounded-tl-xl rounded-tr-xl max-h-[200px] ' />
             </Link>
 
             <div className='mt-6'>
