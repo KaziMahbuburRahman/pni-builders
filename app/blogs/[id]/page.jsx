@@ -35,7 +35,7 @@ export default function page({ params }) {
         fetchBlogData()
     }, [])
     return (
-        <div>{params.id}
+        <div>
             {
                 data ? <BlogPage data={data} /> : ""
             }
