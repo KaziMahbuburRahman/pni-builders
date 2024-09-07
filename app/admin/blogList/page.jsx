@@ -1,6 +1,7 @@
 "use client"
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { toast } from "react-toastify";
 
 
 function Index() {
@@ -12,6 +13,17 @@ function Index() {
         setBlogs(response.data.blogs)
         console.log(response.data.blogs)
     }
+
+    const deleteBlog = async(mongoId)=>{
+        const response = await axios.delete('/api/blog',{
+            params:{
+                id:mongoId
+            }
+        })
+        toast.success(response.data.msg);
+        fetchBlogs();
+    }
+
     useEffect(()=>{
         fetchBlogs();
     },[])
@@ -36,7 +48,7 @@ function Index() {
                 <td className="py-4 px-6 border-b text-xl font-medium">{blog.title}</td>
                 <td className="py-4 px-6 border-b text-lg font-medium">{blog.author}</td>
                 <td className="py-4 px-6 border-b text-end">
-                    <button className="bg-blue-500 hover:scale-110 scale-100 transition-all duration-100 text-white py-2 px-4 rounded-md">Details</button>
+                    <button onClick={()=>deleteBlog(blog._id)} className="bg-blue-500 hover:scale-110 scale-100 transition-all duration-100 text-white py-2 px-4 rounded-md">Delete</button>
                 </td>
             </tr>)
             )
