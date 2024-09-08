@@ -1,8 +1,8 @@
 "use client"
-import Link from 'next/link';
+// import Link from 'next/link';
 import React from 'react';
 import { FaArrowUp, FaCopyright } from 'react-icons/fa6';
-// import  Link  from 'react-scroll';
+import  {Link}  from 'react-scroll';
 
 const Footer = () => {
   return (
@@ -19,7 +19,7 @@ const Footer = () => {
         className='bg-yellow-500 text-black p-3 rounded-full hover:bg-black hover:text-white cursor-pointer fixed lg:bottom-2 bottom-2 right-6 flex justify-center items-center'
       >
         <Link
-        href={"/hero"}
+        // href={"/hero"}
           to='hero'
           spy={true}
           offset={-100}
