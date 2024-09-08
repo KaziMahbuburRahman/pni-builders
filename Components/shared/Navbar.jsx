@@ -1,15 +1,53 @@
 "use client"
 import { assets } from "@/Assets/assets"
+import { scroller  } from 'react-scroll';
 import { willNotRender } from "@/utils/willNotRender"
 import Image from "next/image"
 import Link from "next/link"
+import { Link as ScrollLink } from 'react-scroll'; 
 import { usePathname, useRouter } from "next/navigation"
 import React, { useState } from "react"
 
 export default function Navbar() {
   const [isToggleOpen, setIsToggleOpen] = useState(false)
   const pathname = usePathname()
-  const isAdminRoute = pathname.startsWith('/admin')
+  const isAdminRoute = pathname.startsWith('/admin');
+
+
+  const navItems = [
+    { name: 'Home', path: 'home' },
+    { name: 'About', path: 'about' },
+    { name: 'Services', path: 'services' },
+    { name: 'Projects', path: 'projects' },
+    { name: 'Contact', path: 'contact' }
+  ];
+  const router = useRouter()
+  const handleScrollLink = async (path) => {
+    try {
+      if (pathname !== '/') {
+        await router.push('/');
+        // Wait for the navigation to complete before scrolling
+        setTimeout(() => {
+          scroller.scrollTo(path, {
+            duration: 500,
+            smooth: true,
+            offset: -100,
+          });
+        }, 100); // A small delay to ensure the page has loaded
+      } else {
+        // If already on the home page, just scroll to the section
+        scroller.scrollTo(path, {
+          duration: 500,
+          smooth: true,
+          offset: -100,
+        });
+      }
+    } catch (error) {
+      console.error('Error navigating and scrolling:', error);
+    }
+  };
+
+
   return (
     <>
       {/*<!-- Component: Navbar with CTA --> */}
@@ -90,16 +128,31 @@ export default function Navbar() {
                   : "invisible opacity-0"
                   }`}
               >
-                <li role="none" className="flex items-stretch">
-                  <a
+                 {navItems.map(({ name, path }) => (
+          <ScrollLink
+            onClick={() => handleScrollLink(path)}
+            key={path}
+            to={path}
+            className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-yellow-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8 cursor-pointer"
+            spy={true}
+            offset={-100}
+            smooth={true}
+            duration={500}
+          >
+            {name}
+          </ScrollLink>
+        ))}
+                 <li role="none" className="flex items-stretch">
+                  <Link
                     role="menuitem"
                     aria-haspopup="false"
-                    className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
-                    href="javascript:void(0)"
+                    className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-yellow-500 focus:outline-none focus-visible:outline-none lg:px-8"
+                    href="/blog"
                   >
-                    <span>Features</span>
-                  </a>
+                    <span>Blog</span>
+                  </Link>
                 </li>
+                {/*
                 <li role="none" className="flex items-stretch">
                   <a
                     role="menuitem"
@@ -120,7 +173,7 @@ export default function Navbar() {
                   >
                     <span>About</span>
                   </a>
-                </li>
+                </li> */}
               </ul>
               <div className="ml-auto flex items-center px-6 lg:ml-0 lg:p-0">
                 <button className="inline-flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded bg-emerald-500 px-5 text-sm font-medium tracking-wide text-white shadow-md shadow-emerald-200 transition duration-300 hover:bg-emerald-600 hover:shadow-sm hover:shadow-emerald-200 focus:bg-emerald-700 focus:shadow-sm focus:shadow-emerald-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none">
