@@ -6,7 +6,7 @@ import { clients } from "./export";
 import Image from "next/image";
 const Testito = () => {
   return (
-    <div id="Testito" className="w-full">
+    <div id="Testito" className="w-full bg-[#3b3737]">
       <motion.div
         initial="hidden"
         whileInView="visible"

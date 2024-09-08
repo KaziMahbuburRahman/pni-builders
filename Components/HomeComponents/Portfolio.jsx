@@ -22,7 +22,7 @@ const portfolio = () => {
         PORTFOILIO
       </motion.h1>
       <motion.h1 variants={slideUpVariants} className='text-white text-[40px] text-center font-bold' >
-        Our Bext Projects
+        Our Best Projects
       </motion.h1>
       <motion.div className='w-[120px] h-[6px] bg-yellow-500' variants={slideUpVariants}></motion.div>
       <motion.div  initial="hidden" whileInView="visible" variants={zoomInVariants} className='w-full grid lg:grid-cols-4 grid-cols-1 gap-[20px]'>

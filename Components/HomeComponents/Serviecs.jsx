@@ -13,7 +13,7 @@ const serviecs = () => {
           Special OFFER
         </motion.h1>
         <motion.h1 variants={slideUpVariants} className='text-black text-[40px] text-center font-bold' >
-          Our Bext Services
+          Our Best Services
         </motion.h1>
         <motion.div className='w-[120px] h-[6px] bg-yellow-500' variants={slideUpVariants}></motion.div>
         <motion.div  initial="hidden" whileInView="visible" variants={slideUpVariants} className='w-full grid lg:grid-cols-3 grid-cols-1 justify-center items-start gap-[20px] mt-[30px]'>
