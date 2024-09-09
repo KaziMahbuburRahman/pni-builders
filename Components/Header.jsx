@@ -6,7 +6,7 @@ import TopBar from './shared/TopBar'
 export const Header = () => {
     return (
         <div>
-            <TopBar/>
+            
             <Navbar />
             
             

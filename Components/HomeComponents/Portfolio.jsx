@@ -21,7 +21,7 @@ const portfolio = () => {
       <motion.h1 variants={slideUpVariants} className='text-yellow-500 text-2xl' >
         PORTFOILIO
       </motion.h1>
-      <motion.h1 variants={slideUpVariants} className='text-white text-[40px] text-center font-bold' >
+      <motion.h1 variants={slideUpVariants} className='text-black text-[40px] text-center font-bold' >
         Our Best Projects
       </motion.h1>
       <motion.div className='w-[120px] h-[6px] bg-yellow-500' variants={slideUpVariants}></motion.div>

@@ -1,25 +1,30 @@
 "use client"
+import { usePathname } from 'next/navigation';
 // import Link from 'next/link';
 import React from 'react';
 import { FaArrowUp, FaCopyright } from 'react-icons/fa6';
 import  {Link}  from 'react-scroll';
 
 const Footer = () => {
+  const pathname = usePathname()
+  const isAdminRoute = pathname.startsWith('/admin')
   return (
     <>
-      {/* Footer Section */}
-      <div className='bg-black text-white flex justify-center items-center gap-2 p-5'>
+    {!isAdminRoute && (
+
+     <footer>
+       <div className='bg-black text-white flex justify-center items-center gap-2 p-5'>
         <FaCopyright className='fill-yellow-500 text-xl lg:text-2xl' />
         <p>Copyright 2024, PINI BUILDERS SINGAPORE PTE LTD, All Rights Reserved</p>
       </div>
 
-      {/* Back to Top Arrow */}
+
       <div
         id='icon-box'
         className='bg-yellow-500 text-black p-3 rounded-full hover:bg-black hover:text-white cursor-pointer fixed lg:bottom-2 bottom-2 right-6 flex justify-center items-center'
       >
         <Link
-        // href={"/hero"}
+
           to='hero'
           spy={true}
           offset={-100}
@@ -30,6 +35,9 @@ const Footer = () => {
           <FaArrowUp className='text-2xl' />
         </Link>
       </div>
+     </footer>
+      )
+    }
     </>
   );
 };

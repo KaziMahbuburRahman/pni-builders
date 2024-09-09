@@ -20,7 +20,7 @@ export default function Home() {
       {/* <Newsletter />
       <BlogList /> */}
       {/* <HomeHeader /> */}
-      <Banner/>
+    <Banner/>
     <Hero />
 
     {/* <About /> */}
