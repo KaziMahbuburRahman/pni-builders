@@ -12,6 +12,7 @@ import Serviecs from "@/Components/HomeComponents/Serviecs";
 import Testito from "@/Components/HomeComponents/Testito";
 import Working from "@/Components/HomeComponents/Working";
 import Newsletter from "@/Components/shared/Newsletter";
+import Banner from "@/Components/Banner";
 
 export default function Home() {
   return (
@@ -19,9 +20,13 @@ export default function Home() {
       {/* <Newsletter />
       <BlogList /> */}
       {/* <HomeHeader /> */}
+      <Banner/>
     <Hero />
-    <About />
+
+    {/* <About /> */}
+
     <Serviecs />
+
     <Portfolio />
     <Working />
     <Testito />
