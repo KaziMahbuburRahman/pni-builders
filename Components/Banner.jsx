@@ -2,9 +2,9 @@
 
 const Banner = () => {
   return (
-    <div id='hero' className="relative h-svh pb-10">
+    <div id='hero' className="relative h-svh md:h-[85vh] pb-10">
       <video
-        src="https://videos.pexels.com/video-files/8964796/8964796-uhd_2560_1440_25fps.mp4"
+        src="video.mp4"
         autoPlay
         muted
         className="absolute inset-0 w-full h-full object-cover"
