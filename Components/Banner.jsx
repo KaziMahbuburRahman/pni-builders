@@ -36,7 +36,7 @@ Welcome to our construction management platform, where efficiency meets ease. Tr
             </p>
             <a
               href="#contact"
-              className="flex justify-center w-6/12 mx-auto bg-gradient-to-tr from-yellow-600  to-yellow-500 font-bold tracking-wide text-white capitalize transition-all duration-300 py-4 px-10 lg:px-8 xl:px-10 hover:bg-gradient-to-tr hover:from-white hover:text-black hover:to-stone-600 hover:shadow-md rounded-md"
+              className="flex justify-center w-6/12 mx-auto bg-gradient-to-tr from-yellow-500  to-yellow-300 font-bold tracking-wide text-white capitalize transition-all duration-300 py-4 px-10 lg:px-8 xl:px-10 hover:bg-gradient-to-tr hover:from-white hover:text-black hover:to-stone-600 hover:shadow-md rounded-md"
             >
               Schedule An Appointments
             </a>
