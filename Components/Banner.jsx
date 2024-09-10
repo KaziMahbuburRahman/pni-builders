@@ -10,7 +10,7 @@ const Banner = () => {
         className="absolute inset-0 w-full h-full object-cover"
         loop
       ></video>
-     
+
       <div className="absolute inset-0 "></div>
        
      

@@ -3,7 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function BlogPage({ data }) {
-    console.log(data.title)
+    const { title, description, image, authorImg } = data;
+    console.log(title)
     return (
         <div className="w-full h-full bg-white dark:bg-gray-800">
             <div className="w-full mx-auto py-10 bg-white dark:bg-gray-800">
@@ -13,17 +14,17 @@ export default function BlogPage({ data }) {
                     {/* <div className="font-semibold text-md">{'>'}</div>
                     <div>Framework</div> */}
                     <div className="font-semibold text-md">{'>'}</div>
-                    <div>{data.title}</div>
+                    <div>{title}</div>
                 </div>
 
                 {/* Title */}
                 <h1 className="w-[92%] mx-auto lg:text-4xl md:text-3xl xs:text-2xl text-center font-serif font-semibold pb-4 pt-8 dark:text-white">
-                    {data.title}
+                    {title}
                 </h1>
 
                 {/* Blog Cover */}
                 <Image
-                    src={data.image}
+                    src={image}
                     alt="Blog Cover"
                     className="xl:w-[80%] xs:w-[96%] mx-auto lg:h-[560px] md:h-[480px] rounded-lg"
                     width={700}
@@ -34,7 +35,7 @@ export default function BlogPage({ data }) {
                 <div className="w-[90%] mx-auto flex md:gap-4 xs:gap-2 justify-center items-center pt-4">
                     <div className="flex gap-2 items-center">
                         <Image
-                            src={data.authorImg}
+                            src={authorImg}
                             alt="Blogger Profile"
                             className="md:w-[2.2rem] md:h-[2.2rem] xs:w-[2rem] xs:h-[2rem] rounded-full"
                             width={35}
@@ -53,7 +54,9 @@ export default function BlogPage({ data }) {
                 {/* Blog Content */}
                 <div className="py-6 bg-white dark:bg-gray-800">
                     <div className="md:w-[80%] xs:w-[90%] mx-auto pt-4">
-                        <p className="mx-auto text-md dark:text-gray-300">
+                    <span dangerouslySetInnerHTML={{ __html: description }}></span>
+                        {/* {data.description} */}
+                        {/* <p className="mx-auto text-md dark:text-gray-300">
                             In the world of CSS frameworks, there are plenty of contenders vying for your attention. But for me,
                             Tailwind CSS stands out from the pack. Here is why Tailwind CSS is my go-to for building modern
                             websites:
@@ -101,7 +104,7 @@ export default function BlogPage({ data }) {
                             responsiveness. It's a powerful tool that can streamline your workflow and help you build beautiful,
                             modern websites. So, if you're looking for a CSS framework that empowers you to create with freedom,
                             give Tailwind CSS a try!
-                        </p>
+                        </p> */}
                         <p className='text-black font font-semibold my-4'>Share this article on social media</p>
                         <div className='flex'>
                             <Image src={assets.facebook_icon} />
