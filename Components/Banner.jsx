@@ -7,6 +7,7 @@ const Banner = () => {
         src="video.mp4"
         autoPlay
         muted
+        preload="metadata"
         className="absolute inset-0 w-full h-full object-cover"
         loop
       ></video>
