@@ -9,6 +9,7 @@ import { usePathname, useRouter } from "next/navigation"
 import React, { useState } from "react"
 import TopBar from "./TopBar";
 
+
 export default function Navbar() {
   const [isToggleOpen, setIsToggleOpen] = useState(false)
   const pathname = usePathname()

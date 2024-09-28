@@ -3,6 +3,8 @@ import "./globals.css";
 
 import { Header } from "@/Components/Header";
 import Footer from "@/Components/HomeComponents/Footer";
+import { getServerSession } from "next-auth";
+import { authOptions } from "./api/auth/[...nextauth]/route";
 const outfit = Outfit({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
 export const metadata = {
@@ -10,8 +12,9 @@ export const metadata = {
   description: "Official site of PINI BUILDERS SINGAPORE PTE LTD",
 };
 
-export default function RootLayout({ children }) {
-
+export default async function RootLayout({ children }) {
+  const session = await getServerSession(authOptions);
+  console.log("server session",session);
   return (
     <html lang="en">
       <body className={outfit.className}>
