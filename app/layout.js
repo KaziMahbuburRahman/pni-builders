@@ -3,7 +3,7 @@ import "./globals.css";
 
 import { Header } from "@/Components/Header";
 import Footer from "@/Components/HomeComponents/Footer";
-import { getServerSession } from "next-auth";
+// import { getServerSession } from "next-auth";
 import { authOptions } from "./api/auth/[...nextauth]/route";
 const outfit = Outfit({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
@@ -13,8 +13,8 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children }) {
-  const session = await getServerSession(authOptions);
-  console.log("server session",session);
+  // const session = await getServerSession(authOptions);
+  // console.log("server session",session);
   return (
     <html lang="en">
       <body className={outfit.className}>

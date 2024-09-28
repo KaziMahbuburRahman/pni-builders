@@ -43,7 +43,7 @@ function Index() {
             
            {
             
-            blogs.map(blog=> (<tr className="hover:bg-gray-50 border-b transition duration-300">
+            blogs.map(blog=> (<tr key={blog._id} className="hover:bg-gray-50 border-b transition duration-300">
                
                 <td className="py-4 px-6 border-b text-xl font-medium">{blog.title}</td>
                 <td className="py-4 px-6 border-b text-lg font-medium">{blog.author}</td>

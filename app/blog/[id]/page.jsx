@@ -4,7 +4,7 @@ import BlogPage from '@/Components/BlogPage'
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 
-export default function page({ params }) {
+export default function Page({ params }) {
     const [data, setData] = useState(null);
     
     const fetchBlogData = async() => {

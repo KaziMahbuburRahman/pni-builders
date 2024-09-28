@@ -1,10 +1,10 @@
 const { NextResponse } = require("next/server")
-import { ConnectDB } from '@/lib/config/db';
+import { connectToDatabase } from '@/lib/config/db';
 import BlogModel from '@/lib/models/BlogModel';
 import { writeFile } from 'fs/promises'
 const fs = require('fs')
 const LoadDB = async () => {
-    await ConnectDB();
+    await connectToDatabase();
 }
 LoadDB();
 //API Endpoint to get all blogs
