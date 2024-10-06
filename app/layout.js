@@ -8,8 +8,8 @@ import { authOptions } from "./api/auth/[...nextauth]/route";
 const outfit = Outfit({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
 export const metadata = {
-  title: "PINI BUILDERS SINGAPORE PTE LTD",
-  description: "Official site of PINI BUILDERS SINGAPORE PTE LTD",
+  title: "PNI BUILDERS SINGAPORE PTE LTD",
+  description: "Official site of PNI BUILDERS SINGAPORE PTE LTD",
 };
 
 export default async function RootLayout({ children }) {

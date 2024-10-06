@@ -4,7 +4,8 @@ const nextConfig = {
         domains: [
           'res.cloudinary.com',
           'cdn.tuk.dev',
-          'i.pravatar.cc'
+          'i.pravatar.cc',
+          'www.centuryhandymanservice.com'
         ],
       },
 };

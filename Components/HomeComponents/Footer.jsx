@@ -15,7 +15,7 @@ const Footer = () => {
      <footer>
        <div className='bg-black text-white flex justify-center items-center gap-2 p-5'>
         <FaCopyright className='fill-yellow-500 text-xl lg:text-2xl' />
-        <p>Copyright 2024, PINI BUILDERS SINGAPORE PTE LTD, All Rights Reserved</p>
+        <p>Copyright 2024, PNI BUILDERS SINGAPORE PTE LTD, All Rights Reserved</p>
       </div>
 
 

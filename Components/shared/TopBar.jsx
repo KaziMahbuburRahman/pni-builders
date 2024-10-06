@@ -9,7 +9,7 @@ export default function TopBar() {
         <div className="hidden md:block">
             <ul className="flex space-x-4">
                 <li>
-                    <strong className="uppercase">Welcome to PINI BUILDERS service in Singapore...</strong>
+                    <strong className="uppercase">Welcome to PNI BUILDERS service in Singapore...</strong>
                 </li>
             </ul>
         </div>
