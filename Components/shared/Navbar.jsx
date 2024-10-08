@@ -93,7 +93,7 @@ export default function Navbar() {
                 />
               </svg> */}
               <Link className="flex items-center gap-2 whitespace-nowrap py-3 text-lg focus:outline-none lg:flex-1" href={"/"}>
-                <Image src={assets.pini_builder} width={300} height={300} />
+                <Image src={assets.pini_builder} width={230} height={230} />
               </Link>
               {/* </a> */}
               {/*      <!-- Mobile trigger --> */}

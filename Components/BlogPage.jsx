@@ -53,7 +53,7 @@ export default function BlogPage({ data }) {
 
                 {/* Blog Content */}
                 <div className="py-6 bg-white dark:bg-gray-800">
-                    <div className="md:w-[80%] xs:w-[90%] mx-auto pt-4">
+                    <div className="md:w-[80%] xs:w-[90%] mx-auto pt-4 editorJs">
                     <span dangerouslySetInnerHTML={{ __html: description }}></span>
                         {/* {data.description} */}
                         {/* <p className="mx-auto text-md dark:text-gray-300">
