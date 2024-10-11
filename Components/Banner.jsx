@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
-import { motion } from "framer-motion";
-import { slideUpVariants } from "./HomeComponents/animation";
+// import { motion } from "framer-motion";
+// import { slideUpVariants } from "./HomeComponents/animation";
 
 const Banner = () => {
   const videoRef = useRef(null);
@@ -15,12 +15,9 @@ const Banner = () => {
   }, []); // Empty dependency array ensures this runs when component mounts
 
   return (
-    <motion.div
+    <div
       id="hero"
-      className="relative h-svh md:h-[85vh] pb-10"
-      initial="hidden"
-      whileInView="visible"
-      variants={slideUpVariants}
+      className="relative h-[90vh] md:h-[85vh] pb-10"
     >
       <video
         ref={videoRef}
@@ -38,14 +35,14 @@ const Banner = () => {
         <div className="md:px-10 ">{/* <Header/> */}</div>
         <div className="flex flex-col justify-center items-center px-4 py-36 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 md:py-16 text-white">
           <h1 className="text-3xl font-bold md:flex flex-col justify-center items-center lg:text-6xl tracking-normal md:leading-[1.4em] lg:leading-[1.2em] capitalize">
-            We are Always Ready to{" "}
+            <span style={{ textShadow: "2px 2px 5px rgba(0, 0, 0, 0.6)" }}>We are Always Ready to</span>{" "}
             <span className="font-medium bg-clip-text text-transparent bg-gradient-to-tr from-yellow-500 via-yellow-300 to-slate-500">
               Service
             </span>{" "}
           </h1>
           <div className="">
             <p className="text-lg mb-4"></p>
-            <p className="text-base mb-4">
+            <p className="text-base mb-4"  style={{ textShadow: "2px 2px 5px rgba(0, 0, 0, 0.6)" }}>
               Welcome to our construction management platform, where efficiency
               meets ease. Track projects, manage resources, and control
               budgets—all in one place!
@@ -59,7 +56,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

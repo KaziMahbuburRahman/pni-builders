@@ -18,12 +18,7 @@ const Footer = () => {
         <p>Copyright 2024, PNI BUILDERS SINGAPORE PTE LTD, All Rights Reserved</p>
       </div>
 
-
-      <div
-        id='icon-box'
-        className='bg-yellow-500 text-black p-3 rounded-full hover:bg-black hover:text-white cursor-pointer fixed lg:bottom-2 bottom-2 right-6 flex justify-center items-center'
-      >
-        <Link
+<Link
 
           to='hero'
           spy={true}
@@ -32,9 +27,15 @@ const Footer = () => {
           duration={500}
           className='flex justify-center items-center'
         >
+      <div
+        id='icon-box'
+        className='bg-yellow-500 text-black p-3 rounded-full hover:bg-black hover:text-white cursor-pointer fixed lg:bottom-2 bottom-2 right-6 flex justify-center items-center'
+      >
+        
           <FaArrowUp className='text-2xl' />
-        </Link>
+        
       </div>
+      </Link>
      </footer>
       )
     }

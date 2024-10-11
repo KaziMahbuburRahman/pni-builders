@@ -18,7 +18,7 @@ export default function Navbar() {
 
   const navItems = [
     { name: 'Home', path: 'home' },
-    { name: 'About', path: 'about' },
+    { name: 'About', path: '/elements/about-us' },
     { name: 'Services', path: 'services' },
     { name: 'Projects', path: 'projects' },
     { name: 'Contact', path: 'contact' }
@@ -132,20 +132,28 @@ export default function Navbar() {
                   : "invisible opacity-0"
                   }`}
               >
-                 {navItems.map(({ name, path }) => (
-          <ScrollLink
-            onClick={() => handleScrollLink(path)}
-            key={path}
-            to={path}
-            className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-yellow-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8 cursor-pointer"
-            spy={true}
-            offset={-100}
-            smooth={true}
-            duration={500}
-          >
-            {name}
-          </ScrollLink>
-        ))}
+             {navItems.map(({ name, path }) => (
+    name === 'About' ? (
+      <li key={path} className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-yellow-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8 cursor-pointer">
+        <Link href="/elements/about-us">
+          {name}
+        </Link>
+      </li>
+    ) : (
+      <ScrollLink
+        onClick={() => handleScrollLink(path)}
+        key={path}
+        to={path}
+        className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-yellow-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8 cursor-pointer"
+        spy={true}
+        offset={-100}
+        smooth={true}
+        duration={500}
+      >
+        {name}
+      </ScrollLink>
+    )
+  ))}
                  <li role="none" className="flex items-stretch">
                   <Link
                     role="menuitem"

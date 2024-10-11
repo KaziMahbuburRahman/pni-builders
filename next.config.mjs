@@ -5,7 +5,8 @@ const nextConfig = {
           'res.cloudinary.com',
           'cdn.tuk.dev',
           'i.pravatar.cc',
-          'www.centuryhandymanservice.com'
+          'www.centuryhandymanservice.com',
+          'trickbd.com',
         ],
       },
 };

@@ -13,6 +13,8 @@ import Testito from "@/Components/HomeComponents/Testito";
 import Working from "@/Components/HomeComponents/Working";
 import Newsletter from "@/Components/shared/Newsletter";
 import Banner from "@/Components/Banner";
+import HandymanServices from "@/Components/HomeComponents/HandymanServices";
+import Section from "@/Components/HomeComponents/Section";
 
 export default function Home() {
   return (
@@ -21,8 +23,9 @@ export default function Home() {
       <BlogList /> */}
       {/* <HomeHeader /> */}
     <Banner/>
-    <Hero />
-
+    {/* <Hero /> */}
+<HandymanServices />
+<Section/>
     {/* <About /> */}
 
     <Serviecs />
