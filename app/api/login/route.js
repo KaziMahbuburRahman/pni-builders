@@ -29,7 +29,7 @@ export async function POST(req) {
   });
 
   // Include token and success message
-  return new Response(JSON.stringify({ token, redirect: '/admin/dashboard' }), {
+  return new Response(JSON.stringify({ token, redirect: '/admin' }), {
     status: 200,
   });
 }
