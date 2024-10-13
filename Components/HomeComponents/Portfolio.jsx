@@ -12,10 +12,15 @@ import {motion} from 'framer-motion';
 import { slideUpVariants ,zoomInVariants} from './animation';
 import {allservices} from './export';
 import Image from 'next/image';
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 const portfolio = () => {
   return (
    
     <div id='projects' className='w-full'>
+              <FloatingWhatsApp phoneNumber="+65 9008 8562" 
+         buttonStyle={{ left: '20px', right: 'auto' }} 
+         chatboxStyle={{ left: '20px', right: 'auto' }}
+         />
     <motion.div
      initial="hidden" whileInView="visible" variants={slideUpVariants} className=' lg:w-[80%] w-[90%] m-auto py-[60px] flex flex-col justify-between items-center gap-[20px]'>
       <motion.h1 variants={slideUpVariants} className='text-yellow-500 text-2xl' >

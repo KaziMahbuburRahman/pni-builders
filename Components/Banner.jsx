@@ -16,7 +16,6 @@ const Banner = () => {
 
   return (
     <div
-      id="hero"
       className="relative h-[90vh] md:h-[85vh] pb-10"
     >
       <video
