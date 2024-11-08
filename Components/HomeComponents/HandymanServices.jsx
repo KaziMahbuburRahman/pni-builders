@@ -6,7 +6,7 @@ const HandymanServices = () => {
       {/* First Column */}
       <div className="w-full md:w-4/12 p-6 flex" id="col-1936666931">
         <div className="bg-white shadow-2xl p-8 flex flex-col items-center justify-between h-full">
-          <div className="border-t-[10px] border-yellow-400 mb-4 w-full"></div>
+          <div className="border-t-[10px] border-red-400 mb-4 w-full"></div>
           <div className="flex justify-center">
             <Image
               src="https://www.centuryhandymanservice.com/wp-content/uploads/2024/05/phone-ringing.png"
@@ -26,7 +26,7 @@ const HandymanServices = () => {
       {/* Second Column */}
       <div className="w-full md:w-4/12 p-6 flex" id="col-1207919908">
         <div className="bg-white shadow-2xl p-8 flex flex-col items-center justify-between h-full">
-          <div className="border-t-[10px] border-yellow-400 mb-4 w-full"></div>
+          <div className="border-t-[10px] border-red-400 mb-4 w-full"></div>
           <div className="flex justify-center">
             <Image
               src="https://www.centuryhandymanservice.com/wp-content/uploads/2024/04/maintenance.png"
@@ -46,7 +46,7 @@ const HandymanServices = () => {
       {/* Third Column */}
       <div className="w-full md:w-4/12 p-6 flex" id="col-932950904">
         <div className="bg-white shadow-2xl p-8 flex flex-col items-center justify-between h-full">
-          <div className="border-t-[10px] border-yellow-400 mb-4 w-full"></div>
+          <div className="border-t-[10px] border-red-400 mb-4 w-full"></div>
           <div className="flex justify-center">
             <Image
               src="https://www.centuryhandymanservice.com/wp-content/uploads/2024/04/sweeping.png"

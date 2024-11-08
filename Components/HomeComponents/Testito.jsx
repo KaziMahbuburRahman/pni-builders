@@ -15,7 +15,7 @@ const Testito = () => {
       >
         <motion.h1
           variants={slideUpVariants}
-          className="text-yellow-500 text-2xl"
+          className="text-red-500 text-2xl"
         >
           Testimonials
         </motion.h1>
@@ -26,7 +26,7 @@ const Testito = () => {
           WHATS OUR CLIENT SAYS
         </motion.h1>
         <motion.div
-          className="w-[120px] h-[6px] bg-yellow-500"
+          className="w-[120px] h-[6px] bg-red-500"
           variants={slideUpVariants}
         ></motion.div>
         <motion.div
@@ -40,7 +40,7 @@ const Testito = () => {
               key={index}
               className="flex flex-col justify-center items-center"
             >
-              <div className="border-2 border-white hover:bg-yellow-500 p-4 pb-[100px] pt-[30px]">
+              <div className="border-2 border-white hover:bg-red-500 p-4 pb-[100px] pt-[30px]">
                 <p className="text-lg text-center hover:text-black text-white">{item.about}</p>
               </div>
               <div className="flex flex-col justify-center items-center gap-[5px]">
@@ -50,7 +50,7 @@ const Testito = () => {
                 className="mt-[-50px]"
               />
                <h1 className="text-white text-27px font-semibold uppercase">{item.name}</h1>
-               <h1 className="text-yellow-500 text-[22px]"> {item.post}</h1>
+               <h1 className="text-red-500 text-[22px]"> {item.post}</h1>
               </div> </div>
           ))}
         </motion.div>

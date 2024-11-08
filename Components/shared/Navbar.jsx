@@ -93,7 +93,7 @@ export default function Navbar() {
                 />
               </svg> */}
               <Link className="flex items-center gap-2 whitespace-nowrap py-3 text-lg focus:outline-none lg:flex-1" href={"/"}>
-                <Image src={assets.pini_builder} width={230} height={230} />
+                <Image src={assets.pini_builder} width={175} />
               </Link>
               {/* </a> */}
               {/*      <!-- Mobile trigger --> */}
@@ -134,7 +134,7 @@ export default function Navbar() {
               >
              {navItems.map(({ name, path }) => (
     name === 'About' ? (
-      <li key={path} className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-yellow-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8 cursor-pointer">
+      <li key={path} className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-red-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8 cursor-pointer">
         <Link href="/elements/about-us">
           {name}
         </Link>
@@ -144,7 +144,7 @@ export default function Navbar() {
         onClick={() => handleScrollLink(path)}
         key={path}
         to={path}
-        className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-yellow-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8 cursor-pointer"
+        className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-red-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8 cursor-pointer"
         spy={true}
         offset={-100}
         smooth={true}
@@ -158,7 +158,7 @@ export default function Navbar() {
                   <Link
                     role="menuitem"
                     aria-haspopup="false"
-                    className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-yellow-500 focus:outline-none focus-visible:outline-none lg:px-8"
+                    className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-red-500 focus:outline-none focus-visible:outline-none lg:px-8"
                     href="/blog"
                   >
                     <span>Blog</span>

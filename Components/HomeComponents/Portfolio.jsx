@@ -13,7 +13,8 @@ import { slideUpVariants ,zoomInVariants} from './animation';
 import {allservices} from './export';
 import Image from 'next/image';
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
-const portfolio = () => {
+
+const portfolio = ({imageFiles}) => {
   return (
    
     <div id='projects' className='w-full'>
@@ -23,14 +24,14 @@ const portfolio = () => {
          />
     <motion.div
      initial="hidden" whileInView="visible" variants={slideUpVariants} className=' lg:w-[80%] w-[90%] m-auto py-[60px] flex flex-col justify-between items-center gap-[20px]'>
-      <motion.h1 variants={slideUpVariants} className='text-yellow-500 text-2xl' >
+      <motion.h1 variants={slideUpVariants} className='text-red-500 text-2xl' >
         PORTFOILIO
       </motion.h1>
       <motion.h1 variants={slideUpVariants} className='text-black text-[40px] text-center font-bold' >
         Our Best Projects
       </motion.h1>
-      <motion.div className='w-[120px] h-[6px] bg-yellow-500' variants={slideUpVariants}></motion.div>
-      <motion.div  initial="hidden" whileInView="visible" variants={zoomInVariants} className='w-full grid lg:grid-cols-4 grid-cols-1 gap-[20px]'>
+      <motion.div className='w-[120px] h-[6px] bg-red-500' variants={slideUpVariants}></motion.div>
+      <motion.div  initial="hidden" whileInView="visible" className='w-full grid lg:grid-cols-4 grid-cols-1 gap-[20px]'>
      <Image src={project1} alt='project image' className='h-[250px] w-full' />
      <Image src={project2} alt='project image' className='h-[250px] w-full' />
      <Image src={project3} alt='project image' className='h-[250px] w-full' />
@@ -39,6 +40,19 @@ const portfolio = () => {
      <Image src={project6} alt='project image' className='h-[250px] w-full' />
      <Image src={project7} alt='project image' className='h-[250px] w-full' />
      <Image src={project8} alt='project image' className='h-[250px] w-full' />
+
+        {imageFiles.map((file, index) => (
+          
+            <Image 
+              src={`/images/${file}`} 
+              alt={`Image ${index + 1}`} 
+              className='h-[250px] w-full'
+              width={100}
+              height={100}
+            />
+
+        ))}
+
       </motion.div>
       </motion.div>
   </div>

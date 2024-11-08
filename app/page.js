@@ -15,8 +15,15 @@ import Newsletter from "@/Components/shared/Newsletter";
 import Banner from "@/Components/Banner";
 import HandymanServices from "@/Components/HomeComponents/HandymanServices";
 import Section from "@/Components/HomeComponents/Section";
+import fs from 'fs';
+import path from 'path';
+
 
 export default function Home() {
+
+  const imagesDirectory = path.join(process.cwd(), 'public/images');
+  const imageFiles = fs.readdirSync(imagesDirectory);
+
   return (
     <>
       {/* <Newsletter />
@@ -30,7 +37,7 @@ export default function Home() {
 
     <Serviecs />
 
-    <Portfolio />
+    <Portfolio imageFiles={imageFiles} />
     <Working />
     <Testito />
     <Contact />

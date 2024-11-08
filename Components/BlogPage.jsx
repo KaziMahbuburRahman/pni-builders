@@ -44,7 +44,7 @@ export default function BlogPage({ data }) {
 
                         {/* Blog Details */}
                         <div className="content flex justify-center md:justify-start md:items-start items-center flex-col text-center md:text-left">
-                        <button className='bg-yellow-400 px-4 py-2 rounded-lg font-extrabold cursor-default w-[100px]'>{category}</button>
+                        <button className='bg-red-400 px-4 py-2 rounded-lg font-extrabold cursor-default w-[100px]'>{category}</button>
 
                             <h1 className="text-2xl font-bold my-2">
                                 <Link href="#single_post_content">{title}</Link>

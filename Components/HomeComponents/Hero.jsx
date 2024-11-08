@@ -12,24 +12,24 @@ const hero = () => {
   initial="hidden" whileInView="visible" variants={slideUpVariants} className='lg:w-[60%] w-full flex flex-col justify-center items-start lg:gap-8 gap-4 pb-5' >
     <motion.h1
     variants={slideUpVariants}
-    className='text-yellow-500 text-2xl'
+    className='text-red-500 text-2xl'
     >
 We are builder
     </motion.h1>
-    <div className='w-[120px] h-[6px] bg-yellow-500'></div>
+    <div className='w-[120px] h-[6px] bg-red-500'></div>
     <p className='text-white text-[20px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus consectetur consequatur accusantium ipsa perferendis vel, doloremque harum debitis quidem delectus.</p>
 <motion.div
  initial="hidden" whileInView="visible" variants={zoomInVariants} className='flex justify-center items-center gap-5'
 >
   <motion.button
   variants={zoomInVariants}
-  className='bg-yellow-500 hover:bg-white hover:text-black px-10 py-3 rounded-lg text-black font-bold'
+  className='bg-red-500 hover:bg-white hover:text-black px-10 py-3 rounded-lg text-black font-bold'
   >
 READ MORE
   </motion.button>
   <motion.button
   variants={zoomInVariants}
-  className='border-white hover:border-yellow-500 hover:text-yellow-500 border-2 px-10 py-3 rounded-lg text-white font-bold'
+  className='border-white hover:border-red-500 hover:text-red-500 border-2 px-10 py-3 rounded-lg text-white font-bold'
   >
 REACH US
   </motion.button>

@@ -35,7 +35,7 @@ const Banner = () => {
         <div className="flex flex-col justify-center items-center px-4 py-36 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 md:py-16 text-white">
           <h1 className="text-3xl font-bold md:flex flex-col justify-center items-center lg:text-6xl tracking-normal md:leading-[1.4em] lg:leading-[1.2em] capitalize">
             <span style={{ textShadow: "2px 2px 5px rgba(0, 0, 0, 0.6)" }}>We are Always Ready to</span>{" "}
-            <span className="font-medium bg-clip-text text-transparent bg-gradient-to-tr from-yellow-500 via-yellow-300 to-slate-500">
+            <span className="font-medium bg-clip-text text-transparent bg-gradient-to-tr from-red-500 via-yellow-300 to-slate-500">
               Service
             </span>{" "}
           </h1>
@@ -48,7 +48,7 @@ const Banner = () => {
             </p>
             <a
               href="#contact"
-              className="flex justify-center w-6/12 mx-auto bg-gradient-to-tr from-yellow-500 to-yellow-300 font-bold tracking-wide text-white capitalize transition-all duration-300 py-4 px-10 lg:px-8 xl:px-10 hover:bg-gradient-to-tr hover:from-white hover:text-black hover:to-stone-600 hover:shadow-md rounded-md"
+              className="flex justify-center w-6/12 mx-auto bg-gradient-to-tr from-red-500 to-yellow-300 font-bold tracking-wide text-white capitalize transition-all duration-300 py-4 px-10 lg:px-8 xl:px-10 hover:bg-gradient-to-tr hover:from-white hover:text-black hover:to-stone-600 hover:shadow-md rounded-md"
             >
               Schedule An Appointments
             </a>

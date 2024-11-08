@@ -10,6 +10,7 @@ const outfit = Outfit({ subsets: ["latin"], weight: ["400", "500", "600", "700"]
 export const metadata = {
   title: "PNI BUILDERS SINGAPORE PTE LTD",
   description: "Official site of PNI BUILDERS SINGAPORE PTE LTD",
+  icon: '/favicon.png',
 };
 
 export default async function RootLayout({ children }) {
