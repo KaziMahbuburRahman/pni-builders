@@ -157,7 +157,7 @@ const serviecs = () => {
                 </div>
                 <div className="flex justify-center items-center space-x-4 mt-auto">
   <a
-    href="tel:+65 90088562"
+    href="tel:+65 81749336"
     className="bg-primary text-white px-4 py-2 rounded-full flex items-center justify-center"
     aria-label="Call us"
   >

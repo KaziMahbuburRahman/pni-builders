@@ -97,8 +97,8 @@ export default function ElectricalServices() {
           <div className="md:w-1/2 flex items-center justify-center">
             <div className="text-center">
               <h4 className="text-2xl font-bold mb-2">CALL NOW</h4>
-              <p className="text-xl mb-4">+65 90088562</p>
-              <a href="tel:+6590088562">
+              <p className="text-xl mb-4">+65 81749336</p>
+              <a href="tel:+6581749336">
                 <motion.button className="bg-green-500 text-white p-4 rounded-full" whileHover={{ scale: 1.1 }}>
                   <IoCall size={24} />
                 </motion.button>

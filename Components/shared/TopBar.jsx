@@ -27,7 +27,7 @@ export default function TopBar() {
                     </a>
                 </li>
                 <li>
-                    <strong className="uppercase">CALL NOW: <a href="tel:+6590088562" className="text-white hover:text-gray-300">+65 90088562</a></strong>
+                    <strong className="uppercase">CALL NOW: <a href="tel:+6581749336" className="text-white hover:text-gray-300">+65 81749336</a></strong>
                 </li>
             </ul>
         </div>
@@ -40,7 +40,7 @@ export default function TopBar() {
                     </a>
                 </li>
                 <li>
-                    <strong className="uppercase">CALL NOW: <a href="tel:+6590088562" className="text-white hover:text-gray-300">+65 90088562</a></strong>
+                    <strong className="uppercase">CALL NOW: <a href="tel:+6581749336" className="text-white hover:text-gray-300">+65 81749336</a></strong>
                 </li>
             </ul>
         </div>
