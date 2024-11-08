@@ -7,6 +7,7 @@ const nextConfig = {
           'i.pravatar.cc',
           'www.centuryhandymanservice.com',
           'trickbd.com',
+          'pnibuilders.com'
         ],
       },
 };

@@ -19,6 +19,9 @@ const portfolio = ({imageFiles}) => {
    
     <div id='projects' className='w-full'>
               <FloatingWhatsApp phoneNumber="+65 9008 8562" 
+          accountName="PNI Builders"
+          avatar="https://pnibuilders.com/pini_builder_bg.png"
+
          buttonStyle={{ left: '20px', right: 'auto' }} 
          chatboxStyle={{ left: '20px', right: 'auto' }}
          />
