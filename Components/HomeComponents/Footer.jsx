@@ -19,7 +19,7 @@ const Footer = () => {
 
        <div className='bg-black text-white flex justify-center items-center gap-2 p-5'>
         <span>
-          <FaCopyright className='fill-red-500 text-xl lg:text-2xl' />
+          <FaCopyright className='fill-[#c01d2e] text-xl lg:text-2xl' />
         </span>
         <p>Copyright 2024, PNI BUILDERS SINGAPORE PTE LTD, All Rights Reserved</p>
       </div>
@@ -35,7 +35,7 @@ const Footer = () => {
         >
       <div
         id='icon-box'
-        className='bg-red-500 text-white p-3 rounded-full hover:bg-black hover:text-white cursor-pointer fixed lg:bottom-2 bottom-2 right-6 flex justify-center items-center'
+        className='bg-[#c01d2e] text-white p-3 rounded-full hover:bg-black hover:text-white cursor-pointer fixed lg:bottom-2 bottom-2 right-6 flex justify-center items-center'
       >
         
           <FaArrowUp className='text-2xl' />

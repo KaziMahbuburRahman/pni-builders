@@ -30,7 +30,7 @@ const portfolio = ({imageFiles}) => {
       <motion.h1 variants={slideUpVariants} className='text-black text-[40px] text-center font-bold' >
         Our Best Projects
       </motion.h1>
-      <motion.div className='w-[120px] h-[6px] bg-red-500' variants={slideUpVariants}></motion.div>
+      <motion.div className='w-[120px] h-[6px] bg-[#c01d2e]' variants={slideUpVariants}></motion.div>
       <motion.div  initial="hidden" whileInView="visible" className='w-full grid lg:grid-cols-4 grid-cols-1 gap-[20px]'>
      <Image src={project1} alt='project image' className='h-[250px] w-full' />
      <Image src={project2} alt='project image' className='h-[250px] w-full' />

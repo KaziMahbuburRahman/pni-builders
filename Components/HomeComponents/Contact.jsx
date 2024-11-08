@@ -27,7 +27,7 @@ const Contact = () => {
           REACH US FOR ANY QUERY
         </motion.h1>
         <motion.div
-          className="w-[120px] h-[6px] bg-red-500"
+          className="w-[120px] h-[6px] bg-[#c01d2e]"
           variants={slideUpVariants}
         ></motion.div>
         
@@ -42,7 +42,7 @@ const Contact = () => {
           <input type="email" placeholder='Enter Email' className='px-6 py-3 border-[2px] border-black text-black rounded-lg w-full' />
           <input type="number" placeholder='Enter Mobile Number' className='px-6 py-3 border-[2px] border-black text-black rounded-lg w-full' />
           <textarea name="" placeholder='Enter your message' id='' rows='4' className='px-6 py-3 border-[2px] border-black text-black rounded-lg w-full'></textarea>
-          <motion.button variants={zoomInVariants} className='bg-red-500 hover:bg-black hover:text-white px-10 py-4 rounded-lg text-white font-bold'>CONTACT US</motion.button>
+          <motion.button variants={zoomInVariants} className='bg-[#c01d2e] hover:bg-black hover:text-white px-10 py-4 rounded-lg text-white font-bold'>CONTACT US</motion.button>
         </motion.form>
 
 

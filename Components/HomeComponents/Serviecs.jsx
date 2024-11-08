@@ -122,7 +122,7 @@ const serviecs = () => {
         <motion.h1 variants={slideUpVariants} className='text-black text-[40px] text-center font-bold'>
           Our Best Services
         </motion.h1>
-        <motion.div className='w-[120px] h-[6px] bg-red-500' variants={slideUpVariants}></motion.div>
+        <motion.div className='w-[120px] h-[6px] bg-[#c01d2e]' variants={slideUpVariants}></motion.div>
 
         <motion.div 
           initial="hidden" 
@@ -145,7 +145,7 @@ const serviecs = () => {
 
               <div className="p-4 flex flex-col justify-between flex-grow">
                 <div>
-                  <div className="h-1 w-20 bg-red-400 mx-auto my-4"></div>
+                  <div className="h-1 w-20 bg-[#c01d2e] mx-auto my-4"></div>
                   <h3 className="text-2xl font-bold text-white text-center mb-2">
                     <Link href={service.link} rel="noopener noreferrer">
                       {service.title}
@@ -179,7 +179,7 @@ const serviecs = () => {
               variants={zoomInVariants}
               className='flex justify-center items-start gap-5 p-2'
               key={index}>
-                <Image src={item.icon} alt="icon" className='w-[70px] border-2 border-red-500 hover:bg-red-500 rounded-lg p-2'/>
+                <Image src={item.icon} alt="icon" className='w-[70px] border-2 border-[#c01d2e] hover:bg-[#c01d2e] rounded-lg p-2'/>
                 <div className='flex flex-col justify-center items-start gap-3'>
                 <h1 className='text-xl font-bold text-black'>{item.title}</h1>
                 <p className='text-[18px]'>{item.about}</p>

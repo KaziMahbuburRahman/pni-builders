@@ -14,7 +14,7 @@ const About = () => {
         <motion.h1 variants={slideUpVariants} className='text-white uppercase text-[40px] font-bold' >
           New website
         </motion.h1>
-        <div  className='w-[120px] h-[6px] bg-red-500'></div>
+        <div  className='w-[120px] h-[6px] bg-[#c01d2e]'></div>
         <p className='text-3xl italic text-gray-50 mt-[60px]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, voluptas? Corporis alias molestiae obcaecati placeat recusandae blanditiis exercitationem quo itaque.</p>
       </motion.div>
       <motion.div
@@ -23,7 +23,7 @@ const About = () => {
         <p className='text-white text-lg text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aliquid, iure obcaecati id molestias nihil dicta quis maxime magni facere repellendus voluptatum autem beatae illum laboriosam laudantium accusantium aliquam sapiente quo dolore quisquam. Non distinctio sint neque recusandae voluptatem tempore sunt nesciunt rem error quia officiis illo facere, incidunt ducimus quisquam exercitationem soluta nemo repudiandae officia enim blanditiis repellendus quis! Fugit, nobis dolore eligendi iste ipsa minima maiores, at earum eos dolorem facilis nostrum doloribus. Iste eius adipisci, cumque consequatur officiis autem architecto molestiae amet voluptas explicabo aliquam enim quaerat similique doloribus quidem totam exercitationem omnis, nam asperiores sint! Molestiae!</p>
         <motion.button
   variants={zoomInVariants}
-  className='bg-red-500 hover:bg-white hover:text-black px-10 py-3 rounded-lg text-black font-bold'
+  className='bg-[#c01d2e] hover:bg-white hover:text-black px-10 py-3 rounded-lg text-black font-bold'
   >
 READ MORE
   </motion.button>

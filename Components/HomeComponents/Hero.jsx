@@ -16,20 +16,20 @@ const hero = () => {
     >
 We are builder
     </motion.h1>
-    <div className='w-[120px] h-[6px] bg-red-500'></div>
+    <div className='w-[120px] h-[6px] bg-[#c01d2e]'></div>
     <p className='text-white text-[20px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus consectetur consequatur accusantium ipsa perferendis vel, doloremque harum debitis quidem delectus.</p>
 <motion.div
  initial="hidden" whileInView="visible" variants={zoomInVariants} className='flex justify-center items-center gap-5'
 >
   <motion.button
   variants={zoomInVariants}
-  className='bg-red-500 hover:bg-white hover:text-black px-10 py-3 rounded-lg text-black font-bold'
+  className='bg-[#c01d2e] hover:bg-white hover:text-black px-10 py-3 rounded-lg text-black font-bold'
   >
 READ MORE
   </motion.button>
   <motion.button
   variants={zoomInVariants}
-  className='border-white hover:border-red-500 hover:text-red-500 border-2 px-10 py-3 rounded-lg text-white font-bold'
+  className='border-white hover:border-[#c01d2e] hover:text-red-500 border-2 px-10 py-3 rounded-lg text-white font-bold'
   >
 REACH US
   </motion.button>

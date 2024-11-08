@@ -22,7 +22,7 @@ export default function Blogcard({ image, title, description, category, id,  asp
             : cleanText;
     };
     return (
-        // <div className='flex justify-center items-center min-h-screen bg-red-400 font-FigTree text-base'>
+        // <div className='flex justify-center items-center min-h-screen bg-[#c01d2e] font-FigTree text-base'>
         <div className='h-full max-w-[90%]max-lg:w-[375px] lg:w-[384px] flex flex-col justify-center  bg-white p-5 rounded-xl border-2 border-black  shadow-[10px_10px_0px_1px_rgba(0,0,0,1)]'>
             <Link href={`blog/${id}`}>
                 <Image src={image} 
@@ -34,7 +34,7 @@ export default function Blogcard({ image, title, description, category, id,  asp
             </Link>
 
             <div className='mt-6'>
-                <button className='bg-red-400 px-4 py-2 rounded-lg font-extrabold cursor-default'>{category}</button>
+                <button className='bg-[#c01d2e] px-4 py-2 rounded-lg font-extrabold cursor-default'>{category}</button>
                 <p className='mt-4 font-bold'>Published 21 Dec 2023</p>
                 <Link href={`blog/${id}`}>
                 <h2 className='font-extrabold text-[20px] mt-4 mb-4 hover:text-yellow-400 hover:cursor-pointer'>{title}</h2>
