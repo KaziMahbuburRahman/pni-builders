@@ -24,13 +24,13 @@ const portfolio = ({imageFiles}) => {
          />
     <motion.div
      initial="hidden" whileInView="visible" variants={slideUpVariants} className=' lg:w-[80%] w-[90%] m-auto py-[60px] flex flex-col justify-between items-center gap-[20px]'>
-      <motion.h1 variants={slideUpVariants} className='text-red-500 text-2xl' >
+      <motion.h1 className='text-red-500 text-2xl' >
         PORTFOILIO
       </motion.h1>
-      <motion.h1 variants={slideUpVariants} className='text-black text-[40px] text-center font-bold' >
+      <motion.h1 className='text-black text-[40px] text-center font-bold'>
         Our Best Projects
       </motion.h1>
-      <motion.div className='w-[120px] h-[6px] bg-[#c01d2e]' variants={slideUpVariants}></motion.div>
+      <motion.div className='w-[120px] h-[6px] bg-[#c01d2e]'></motion.div>
       <motion.div  initial="hidden" whileInView="visible" className='w-full grid lg:grid-cols-4 grid-cols-1 gap-[20px]'>
      <Image src={project1} alt='project image' className='h-[250px] w-full' />
      <Image src={project2} alt='project image' className='h-[250px] w-full' />
