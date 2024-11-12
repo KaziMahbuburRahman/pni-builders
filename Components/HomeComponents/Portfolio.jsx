@@ -18,7 +18,7 @@ const portfolio = ({imageFiles}) => {
   return (
    
     <div id='projects' className='w-full'>
-              <FloatingWhatsApp phoneNumber="+65 9008 8562" 
+              <FloatingWhatsApp phoneNumber="+6581749336" 
           accountName="PNI Builders"
           avatar="https://pnibuilders.com/pini_builder_bg.png"
 
