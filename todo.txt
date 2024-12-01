@@ -1,0 +1,1 @@
+1. use https://quilljs.com/ instead of current editor
