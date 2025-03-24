@@ -12,6 +12,8 @@
 # next.js
 /.next/
 /out/
+build.zip
+todo.txt
 
 # production
 /build
