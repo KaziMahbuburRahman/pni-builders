@@ -16,7 +16,7 @@ export default function Page() {
     description: "", // will be updated by the editor content
     category: "Startup",
     author: "Alex Bennett",
-    authorImg: "/author_img.png"
+    authorImg: "/author_img.png",
   });
 
   // To capture editor content
@@ -50,7 +50,7 @@ export default function Page() {
           description: "",
           category: "Startup",
           author: "Alex Bennett",
-          authorImg: "/author_img.png"
+          authorImg: "/author_img.png",
         });
       } else {
         toast.error("Error submitting the post");
@@ -81,7 +81,7 @@ export default function Page() {
         />
         <label
           htmlFor="image"
-          className="relative flex cursor-pointer flex-col items-center gap-4 rounded border border-dashed border-slate-300 px-3 py-6 text-center text-sm font-medium transition-colors"
+          className="relative flex cursor-pointer flex-col items-center gap-4 rounded border border-dashed border-slate-300 px-3 py-6 text-center text-sm font-medium transition-colorsx"
         >
           {!image ? (
             <span className="inline-flex h-12 items-center justify-center self-center rounded-full bg-slate-100/70 px-3 text-slate-400">
@@ -111,7 +111,8 @@ export default function Page() {
           )}
           {!image ? (
             <span className="text-slate-500">
-              Drag & drop or <span className="text-emerald-500">upload a file</span>
+              Drag & drop or{" "}
+              <span className="text-emerald-500">upload a file</span>
             </span>
           ) : (
             ""
@@ -130,10 +131,13 @@ export default function Page() {
           placeholder="Title"
           type="text"
         />
- {/* Loading state for TinyMCE */}
- {loading && <div className="text-center text-gray-500 mb-4">Loading editor...</div>}
+        {/* Loading state for TinyMCE */}
+        {loading && (
+          <div className="text-center text-gray-500 mb-4">
+            Loading editor...
+          </div>
+        )}
 
-     
         {/* TinyMCE Editor */}
         <TinyMCEEditor
           onEditorChange={onEditorInputChange}
@@ -144,7 +148,7 @@ export default function Page() {
             plugins: plugins,
             toolbar: toolbars,
             menubar: false, // Customize to match your old editor
-            branding: false
+            branding: false,
           }}
           onInit={() => setLoading(false)}
         />

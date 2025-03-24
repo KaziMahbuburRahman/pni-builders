@@ -1,11 +1,11 @@
-"use client"
-import { willNotRender } from "@/utils/willNotRender"
-import { usePathname } from "next/navigation"
-import React from "react"
+"use client";
+import { willNotRender } from "@/utils/willNotRender";
+import { usePathname } from "next/navigation";
+import React from "react";
 
 export default function Footer() {
-  const pathname = usePathname()
-  const isAdminRoute = pathname.startsWith('/admin')
+  const pathname = usePathname();
+  const isAdminRoute = pathname.startsWith("/admin");
   return (
     <>
       {/*<!-- Component: Primary Dark Theme Footer --> */}
@@ -29,7 +29,7 @@ export default function Footer() {
                     <li className="mb-2 leading-6">
                       <a
                         href="#"
-                        className="transition-colors duration-300 hover:text-emerald-100 focus:text-emerald-50"
+                        className="transition-colorsx duration-300 hover:text-emerald-100 focus:text-emerald-50"
                       >
                         Features
                       </a>
@@ -37,7 +37,7 @@ export default function Footer() {
                     <li className="mb-2 leading-6">
                       <a
                         href="#"
-                        className="transition-colors duration-300 hover:text-emerald-100 focus:text-emerald-50"
+                        className="transition-colorsx duration-300 hover:text-emerald-100 focus:text-emerald-50"
                       >
                         Customers
                       </a>
@@ -45,7 +45,7 @@ export default function Footer() {
                     <li className="mb-2 leading-6">
                       <a
                         href="#"
-                        className="transition-colors duration-300 hover:text-emerald-100 focus:text-emerald-50"
+                        className="transition-colorsx duration-300 hover:text-emerald-100 focus:text-emerald-50"
                       >
                         Why us?
                       </a>
@@ -53,7 +53,7 @@ export default function Footer() {
                     <li className="mb-2 leading-6">
                       <a
                         href="#"
-                        className="transition-colors duration-300 hover:text-emerald-100 focus:text-emerald-50"
+                        className="transition-colorsx duration-300 hover:text-emerald-100 focus:text-emerald-50"
                       >
                         Pricing
                       </a>
@@ -74,7 +74,7 @@ export default function Footer() {
                     <li className="mb-2 leading-6">
                       <a
                         href="#"
-                        className="transition-colors duration-300 hover:text-emerald-100 focus:text-emerald-50"
+                        className="transition-colorsx duration-300 hover:text-emerald-100 focus:text-emerald-50"
                       >
                         Documentation
                       </a>
@@ -82,7 +82,7 @@ export default function Footer() {
                     <li className="mb-2 leading-6">
                       <a
                         href="#"
-                        className="transition-colors duration-300 hover:text-emerald-100 focus:text-emerald-50"
+                        className="transition-colorsx duration-300 hover:text-emerald-100 focus:text-emerald-50"
                       >
                         Training
                       </a>
@@ -90,7 +90,7 @@ export default function Footer() {
                     <li className="mb-2 leading-6">
                       <a
                         href="#"
-                        className="transition-colors duration-300 hover:text-emerald-100 focus:text-emerald-50"
+                        className="transition-colorsx duration-300 hover:text-emerald-100 focus:text-emerald-50"
                       >
                         System status
                       </a>
@@ -98,7 +98,7 @@ export default function Footer() {
                     <li className="mb-2 leading-6">
                       <a
                         href="#"
-                        className="transition-colors duration-300 hover:text-emerald-100 focus:text-emerald-50"
+                        className="transition-colorsx duration-300 hover:text-emerald-100 focus:text-emerald-50"
                       >
                         FAQ's
                       </a>
@@ -106,7 +106,7 @@ export default function Footer() {
                     <li className="mb-2 leading-6">
                       <a
                         href="#"
-                        className="transition-colors duration-300 hover:text-emerald-100 focus:text-emerald-50"
+                        className="transition-colorsx duration-300 hover:text-emerald-100 focus:text-emerald-50"
                       >
                         Help Center
                       </a>
@@ -127,7 +127,7 @@ export default function Footer() {
                     <li className="mb-2 leading-6">
                       <a
                         href="#"
-                        className="transition-colors duration-300 hover:text-emerald-100 focus:text-emerald-50"
+                        className="transition-colorsx duration-300 hover:text-emerald-100 focus:text-emerald-50"
                       >
                         About us
                       </a>
@@ -135,7 +135,7 @@ export default function Footer() {
                     <li className="mb-2 leading-6">
                       <a
                         href="#"
-                        className="transition-colors duration-300 hover:text-emerald-100 focus:text-emerald-50"
+                        className="transition-colorsx duration-300 hover:text-emerald-100 focus:text-emerald-50"
                       >
                         Careers
                       </a>
@@ -143,7 +143,7 @@ export default function Footer() {
                     <li className="mb-2 leading-6">
                       <a
                         href="#"
-                        className="transition-colors duration-300 hover:text-emerald-100 focus:text-emerald-50"
+                        className="transition-colorsx duration-300 hover:text-emerald-100 focus:text-emerald-50"
                       >
                         Leadership
                       </a>
@@ -151,7 +151,7 @@ export default function Footer() {
                     <li className="mb-2 leading-6">
                       <a
                         href="#"
-                        className="transition-colors duration-300 hover:text-emerald-100 focus:text-emerald-50"
+                        className="transition-colorsx duration-300 hover:text-emerald-100 focus:text-emerald-50"
                       >
                         Blog
                       </a>
@@ -159,7 +159,7 @@ export default function Footer() {
                     <li className="mb-2 leading-6">
                       <a
                         href="#"
-                        className="transition-colors duration-300 hover:text-emerald-100 focus:text-emerald-50"
+                        className="transition-colorsx duration-300 hover:text-emerald-100 focus:text-emerald-50"
                       >
                         Events
                       </a>
@@ -180,7 +180,7 @@ export default function Footer() {
                     <li className="mb-2 leading-6">
                       <a
                         href="#"
-                        className="transition-colors duration-300 hover:text-emerald-100 focus:text-emerald-50"
+                        className="transition-colorsx duration-300 hover:text-emerald-100 focus:text-emerald-50"
                       >
                         Contact
                       </a>
@@ -188,7 +188,7 @@ export default function Footer() {
                     <li className="mb-2 leading-6">
                       <a
                         href="#"
-                        className="transition-colors duration-300 hover:text-emerald-100 focus:text-emerald-50"
+                        className="transition-colorsx duration-300 hover:text-emerald-100 focus:text-emerald-50"
                       >
                         Support
                       </a>
@@ -196,7 +196,7 @@ export default function Footer() {
                     <li className="mb-2 leading-6">
                       <a
                         href="#"
-                        className="transition-colors duration-300 hover:text-emerald-100 focus:text-emerald-50"
+                        className="transition-colorsx duration-300 hover:text-emerald-100 focus:text-emerald-50"
                       >
                         Partners
                       </a>
@@ -204,7 +204,7 @@ export default function Footer() {
                     <li className="mb-2 leading-6">
                       <a
                         href="#"
-                        className="transition-colors duration-300 hover:text-emerald-100 focus:text-emerald-50"
+                        className="transition-colorsx duration-300 hover:text-emerald-100 focus:text-emerald-50"
                       >
                         Join research
                       </a>
@@ -233,7 +233,7 @@ export default function Footer() {
                     <li>
                       <a
                         href="#"
-                        className="transition-colors duration-300 hover:text-emerald-100"
+                        className="transition-colorsx duration-300 hover:text-emerald-100"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -261,7 +261,7 @@ export default function Footer() {
                     <li>
                       <a
                         href="#"
-                        className="transition-colors duration-300 hover:text-emerald-100"
+                        className="transition-colorsx duration-300 hover:text-emerald-100"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -287,7 +287,7 @@ export default function Footer() {
                     <li>
                       <a
                         href="#"
-                        className="transition-colors duration-300 hover:text-emerald-100"
+                        className="transition-colorsx duration-300 hover:text-emerald-100"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -318,10 +318,9 @@ export default function Footer() {
             </div>
           </div>
         </footer>
-      )
-      }
+      )}
 
       {/*<!-- End Primary Dark Theme Footer --> */}
     </>
-  )
+  );
 }

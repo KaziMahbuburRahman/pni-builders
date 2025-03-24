@@ -31,6 +31,10 @@ export const authOptions = {
           return null;
         }
 
+
+        
+
+
         const isPasswordCorrect = await bcrypt.compare(credentials.password, user.password);
         if (!isPasswordCorrect) {
           console.log('Invalid password');
